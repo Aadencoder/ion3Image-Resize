@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Image Handling</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ <!-- Need To check In simulator -->
+  <!-- <h3>Image Handling</h3>
+  <img [src]="pickedImage">
+
+  <button ion-buttons (click)="resizeImage(pickedImage)">Resize</button> -->
+
+  <button ion-button full (click)="loadImage()">Load Image</button>
+  <button ion-button full (click)="createThumbnail()">Create Thumbnail</button>
+  
+  <!-- <h2>Big Image ({{ bigSize }} MB)</h2>
+  <img [src]="bigImg"> -->
+  <h2>Small Image ({{ smallSize }} MB)</h2>
+  <img [src]="smallImg">
+    <h2>Small Image Two ({{ smallSizeTwo }} MB)</h2>
+    <img [src]="smallImgTwo">
+</ion-content>
